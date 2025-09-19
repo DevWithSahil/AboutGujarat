@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gujarat Culture Information</title>
+    <meta name="description" content="Get in touch to learn more about Gujarat's culture, traditions, festivals, and heritage. Contact us for cultural information and tourism guidance.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">G</div>
+                <span class="logo-text">Gujarat Culture</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="traditions.html" class="nav-link">Traditions</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="register.html" class="nav-link">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>Have questions about Gujarat's culture? Want to learn more about our traditions? 
+               We'd love to hear from you and share the beauty of Gujarat's heritage.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-card">
+                        <h2>Send Us a Message</h2>
+                        <p>Share your thoughts, questions, or experiences about Gujarat's culture</p>
+                        
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your interest in Gujarat's culture, ask questions, or share your experiences..." rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-hero form-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about Gujarat's culture and traditions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>What's the best time to visit Gujarat?</h3>
+                    <p>October to March offers pleasant weather, with major festivals like Navratri, Diwali, and Uttarayan celebrated during this period.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>How can I learn Gujarati folk dances?</h3>
+                    <p>Many cultural centers offer Garba and Dandiya classes, especially before Navratri. Local community centers often have year-round programs.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>Where can I buy authentic Gujarati crafts?</h3>
+                    <p>Visit local markets in Ahmedabad, Surat, or Rajkot. Government emporiums and craft fairs showcase authentic handmade items.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>Are there guided cultural tours available?</h3>
+                    <p>Yes, many tour operators offer cultural heritage tours covering historical sites, craft villages, and festival experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">G</div>
+                        <span class="logo-text">Gujarat Culture</span>
+                    </div>
+                    <p>Celebrating the rich heritage, vibrant culture, and delicious cuisine of Gujarat, India.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="food.html">Food</a>
+                        <a href="festivals.html">Festivals</a>
+                        <a href="traditions.html">Traditions</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Explore Gujarat</h3>
+                    <p>Discover the vibrant traditions, mouth-watering cuisine, and colorful festivals that make Gujarat a cultural treasure of India.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gujarat Culture. Created with love for Gujarat's heritage.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-grid {
+            display: grid;
+            padding-left: 10%;
+            padding-right: 10%;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: var(--shadow-cultural);
+        }
+
+        .form-card h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: center;
+            color: var(--gray-dark);
+        }
+
+        .form-card > p {
+            text-align: center;
+            color: var(--gray-medium);
+            margin-bottom: 32px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: var(--gray-dark);
+        }
+
+        .contact-info p {
+            color: var(--gray-medium);
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-cultural);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1);
+        }
+
+        .contact-content h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--gray-dark);
+        }
+
+        .contact-content p {
+            color: var(--gray-medium);
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .contact-link {
+            color: var(--saffron);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--saffron-dark);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .faq-card h3 {
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: var(--gray-dark);
+        }
+
+        .faq-card p {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .form-card {
+                padding: 24px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

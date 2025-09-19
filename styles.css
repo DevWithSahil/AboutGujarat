@@ -1,0 +1,674 @@
+/* CSS Variables for Gujarat Cultural Colors */
+:root {
+    --saffron: #FF9500;
+    --saffron-dark: #E6850E;
+    --gujarati-green: #138808;
+    --gujarati-green-dark: #0F6B06;
+    --traditional-red: #FF4444;
+    --traditional-red-dark: #E63939;
+    --cream: #F8F5F0;
+    --gold: #FFD700;
+    --white: #FFFFFF;
+    --black: #1A1A1A;
+    --gray-light: #F5F5F5;
+    --gray-medium: #888888;
+    --gray-dark: #333333;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--saffron), var(--gold));
+    --gradient-cultural: linear-gradient(45deg, var(--gujarati-green), var(--saffron));
+    --gradient-festival: linear-gradient(135deg, var(--traditional-red), var(--saffron));
+    
+    /* Shadows */
+    --shadow-cultural: 0 10px 30px -10px rgba(255, 149, 0, 0.3);
+    --shadow-elegant: 0 4px 20px -4px rgba(255, 149, 0, 0.25);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;  
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.login-container{
+    padding-left: 20%;
+    padding-right: 40%;
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: var(--shadow-cultural);
+            
+}
+/* Navigation */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--gray-dark);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--saffron);
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-hero {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-elegant);
+    transform: scale(1);
+}
+
+.btn-hero:hover {
+    box-shadow: var(--shadow-cultural);
+    transform: scale(1.05);
+}
+
+.btn-cultural {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-cultural);
+}
+
+.btn-cultural:hover {
+    opacity: 0.9;
+}
+
+.btn-festival {
+    background: var(--gradient-festival);
+    color: white;
+}
+
+.btn-festival:hover {
+    opacity: 0.9;
+}
+
+.btn-outline {
+    border: 2px solid #e0e0e0;
+    background: white;
+    color: var(--gray-dark);
+}
+
+.btn-outline:hover {
+    background: var(--saffron);
+    color: white;
+    border-color: var(--saffron);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('gujarat.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 64px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Section Styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: var(--gray-dark);
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: var(--gray-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Preview Section */
+.preview-section {
+    padding: 80px 0;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.preview-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.preview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-cultural);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.preview-card:hover .image-placeholder {
+    transform: scale(1.1);
+}
+
+.food-bg {
+    background: var(--gradient-primary);
+}
+
+.festival-card {
+    background: var(--gradient-festival);
+}
+.festival-bg {
+    background: var(--gradient-festival)
+}
+
+.tradition-bg {
+    background: var(--gradient-cultural);
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--gray-dark);
+}
+
+.card-content p {
+    color: var(--gray-medium);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Page Specific Styles */
+.page-hero {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section.bg-light {
+    background-color: var(--gray-light);
+}
+
+/* Grid Layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-cultural);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--gray-dark);
+}
+
+.card p {
+    color: var(--gray-medium);
+    line-height: 1.6;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--saffron);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--gray-light);
+    border-top: 1px solid #e0e0e0;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: var(--gray-dark);
+}
+
+.footer-section p {
+    color: var(--gray-medium);
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.footer-links a {
+    color: var(--gray-medium);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--saffron);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom p {
+    color: var(--gray-medium);
+}
+
+/* Login & Register Styles */
+.login-container,
+.register-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.login-form-wrapper,
+.register-form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-elegant);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--gray-dark);
+}
+
+.form-header p {
+    color: var(--gray-medium);
+    font-size: 1rem;
+}
+
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.checkbox-group.full-width {
+    justify-content: flex-start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--saffron);
+}
+
+.checkbox-text {
+    font-size: 14px;
+    color: var(--gray-dark);
+}
+
+.forgot-link,
+.terms-link,
+.register-link,
+.login-link {
+    color: var(--saffron);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-link:hover,
+.terms-link:hover,
+.register-link:hover,
+.login-link:hover {
+    color: var(--saffron-dark);
+}
+
+.login-btn,
+.register-btn {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.form-footer p {
+    color: var(--gray-medium);
+    font-size: 14px;
+}
+
+.login-image,
+.register-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.cultural-pattern {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.pattern-circle:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.pattern-circle:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    right: 20px;
+}
+
+.pattern-circle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    bottom: 60px;
+    left: 60px;
+}
+
+.pattern-decoration {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.pattern-decoration:nth-child(4) {
+    top: 20px;
+    right: 40px;
+}
+
+.pattern-decoration:nth-child(5) {
+    bottom: 20px;
+    left: 40px;
+}
+
+.pattern-decoration:nth-child(6) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
